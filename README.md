@@ -1,12 +1,10 @@
 # Reactwind - React Tailwind Admin Dashboard Template
 
-Reactwind is an open-source admin dashboard template built on **React and Tailwind CSS**, providing developers with everything they need to create a comprehensive, data-driven back-end, 
-dashboard, or admin panel solution for upcoming web projects.
+Reactwind is an open-source admin dashboard template built on **React and Tailwind CSS**, providing developers with everything they need to create a comprehensive, data-driven back-end, dashboard, or admin panel solution for upcoming web projects.
 
 
 With reactwind, you get access to all the necessary dashboard UI components, elements, and pages required to build a feature-rich and complete dashboard or admin panel. Whether you're building dashboard or admin panel for a complex web application or a simple website, reactwind is the perfect solution to help you get up and running quickly.
 
-### [✨ Visit Website](https://reactwind.com/)
 
 ### [🚀 Demo](https://react-demo.reactwind.com/)
 
@@ -18,6 +16,7 @@ ___
 - 50+ Total UI Elements 
 - 10+ HTML Files
 - Basic UI Kit Elements and Files
+- Light/Dark Mode Toggle
 ___
 
 
@@ -25,11 +24,11 @@ Reactwind dashboard template is based on Tailwind CSS which provides a pre-desig
 
 If you're looking for a high-quality **React-Tailwind Dashboard, Admin Panel Template, or UI Kit**, reactwind will be the perfect choice for you!
 
-## Reactwind React - Installation
+## Reactwind - Installation
 
-You'll need to install Node.js >=v14.16+ (Recommended Version) (NPM comes along with it) and reactwind uses **Vite** for frontend tooling, to peform installation and building production version, please follow these steps from below:
+You'll need to install Node.js >=v14.16+ (Recommended Version) and reactwind uses **Vite** for frontend tooling, to peform installation and building production version, please follow these steps from below:
 
-- Use terminal and navigate to the project (reactwind-react) root.
+- Use terminal and navigate to the project (reactwind) root.
 
 - Then run : <code>npm install</code>
 

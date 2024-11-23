@@ -7,7 +7,7 @@ import SignIn from './pages/Authentication/SignIn';
 import SignUp from './pages/Authentication/SignUp';
 import Calendar from './pages/Calendar';
 import Chart from './pages/Chart';
-import ECommerce from './pages/Dashboard/ECommerce';
+import Dashboard from './pages/Dashboard/Dashboard';
 import FormElements from './pages/Form/FormElements';
 import FormLayout from './pages/Form/FormLayout';
 import Profile from './pages/Profile';
@@ -18,7 +18,7 @@ import Buttons from './pages/UiElements/Buttons';
 import DefaultLayout from './layout/DefaultLayout';
 
 function App() {
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState(true);
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -35,11 +35,11 @@ function App() {
     <DefaultLayout>
       <Routes>
         <Route
-          index
+          path="/dashboard"
           element={
             <>
-              <PageTitle title="eCommerce Dashboard | Reactwind - Tailwind CSS Admin Dashboard Template" />
-              <ECommerce />
+              <PageTitle title="Dashboard | Reactwind - Tailwind CSS Admin Dashboard Template" />
+              <Dashboard />
             </>
           }
         />
@@ -125,7 +125,7 @@ function App() {
           }
         />
         <Route
-          path="/auth/signin"
+          path="/login"
           element={
             <>
               <PageTitle title="Signin | Reactwind - Tailwind CSS Admin Dashboard Template" />
@@ -134,7 +134,7 @@ function App() {
           }
         />
         <Route
-          path="/auth/signup"
+          path="/signup"
           element={
             <>
               <PageTitle title="Signup | Reactwind - Tailwind CSS Admin Dashboard Template" />
