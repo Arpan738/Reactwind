@@ -6,11 +6,11 @@ Reactwind is an open-source admin dashboard template built on **React and Tailwi
 With reactwind, you get access to all the necessary dashboard UI components, elements, and pages required to build a feature-rich and complete dashboard or admin panel. Whether you're building dashboard or admin panel for a complex web application or a simple website, reactwind is the perfect solution to help you get up and running quickly.
 
 
-### [🚀 Demo](https://react-demo.reactwind.com/)
+### [🚀 Demo](https://reactwind-demo.netlify.app/)
 
 ___
 
-#### [Reactwind Features](https://free-react-demo.reactwind.com/)
+#### [Reactwind Features](https://reactwind-demo.netlify.app/)
 - 1 Unique Dashboard
 - 30+ Dashboard UI Components
 - 50+ Total UI Elements 
