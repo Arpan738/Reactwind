@@ -5,7 +5,9 @@ const MapOne = () => {
       <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
         Region labels
       </h4>
-      <div id="mapOne" className="mapOne map-btn h-90"></div>
+      <div className="h-90 flex justify-center items-center">
+        This is under development
+      </div>
     </div>
   );
 };

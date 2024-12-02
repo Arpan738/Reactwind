@@ -8,33 +8,33 @@ const productData = [
     image: ProductOne,
     name: 'Apple Watch Series 7',
     category: 'Electronics',
-    price: 296,
+    price: '$296',
     sold: 22,
-    profit: 45,
+    profit: '$45',
   },
   {
     image: ProductTwo,
     name: 'Macbook Pro M1',
     category: 'Electronics',
-    price: 546,
+    price: '$546',
     sold: 12,
-    profit: 125,
+    profit: '$125',
   },
   {
     image: ProductThree,
     name: 'Dell Inspiron 15',
     category: 'Electronics',
-    price: 443,
+    price: '$443',
     sold: 64,
-    profit: 247,
+    profit: '$247',
   },
   {
     image: ProductFour,
     name: 'HP Probook 450',
     category: 'Electronics',
-    price: 499,
+    price: '$499',
     sold: 72,
-    profit: 103,
+    profit: '$103',
   },
 ];
 
@@ -47,57 +47,58 @@ const TableTwo = () => {
         </h4>
       </div>
 
-      <div className="grid grid-cols-6 border-t border-stroke py-4.5 px-4 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-        <div className="col-span-3 flex items-center">
-          <p className="font-medium">Product Name</p>
-        </div>
-        <div className="col-span-2 hidden items-center sm:flex">
-          <p className="font-medium">Category</p>
-        </div>
-        <div className="col-span-1 flex items-center">
-          <p className="font-medium">Price</p>
-        </div>
-        <div className="col-span-1 flex items-center">
-          <p className="font-medium">Sold</p>
-        </div>
-        <div className="col-span-1 flex items-center">
-          <p className="font-medium">Profit</p>
-        </div>
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse">
+          <thead>
+            <tr className="bg-gray-2 dark:bg-meta-4 text-left">
+              <th className="p-3 text-sm font-medium uppercase">Product Name</th>
+              <th className="p-3 text-sm font-medium uppercase hidden sm:table-cell">
+                Category
+              </th>
+              <th className="p-3 text-sm font-medium uppercase text-center">
+                Price
+              </th>
+              <th className="p-3 text-sm font-medium uppercase text-center">
+                Sold
+              </th>
+              <th className="p-3 text-sm font-medium uppercase text-center">
+                Profit
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {productData.map((product, index) => (
+              <tr
+                key={index}
+                className={`border-b dark:border-strokedark ${
+                  index === productData.length - 1 ? '' : 'border-stroke'
+                }`}
+              >
+                <td className="p-3 flex items-center gap-3">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-12 h-12 rounded-md"
+                  />
+                  <span className="text-black dark:text-white">
+                    {product.name}
+                  </span>
+                </td>
+                <td className="p-3 hidden sm:table-cell text-black dark:text-white">
+                  {product.category}
+                </td>
+                <td className="p-3 text-center text-black dark:text-white">
+                  {product.price}
+                </td>
+                <td className="p-3 text-center text-black dark:text-white">
+                  {product.sold}
+                </td>
+                <td className="p-3 text-center text-meta-3">{product.profit}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-
-      {productData.map((product, key) => (
-        <div
-          className="grid grid-cols-6 border-t border-stroke py-4.5 px-4 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5"
-          key={key}
-        >
-          <div className="col-span-3 flex items-center">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-              <div className="h-12.5 w-15 rounded-md">
-                <img src={product.image} alt="Product" />
-              </div>
-              <p className="text-sm text-black dark:text-white">
-                {product.name}
-              </p>
-            </div>
-          </div>
-          <div className="col-span-2 hidden items-center sm:flex">
-            <p className="text-sm text-black dark:text-white">
-              {product.category}
-            </p>
-          </div>
-          <div className="col-span-1 flex items-center">
-            <p className="text-sm text-black dark:text-white">
-              ${product.price}
-            </p>
-          </div>
-          <div className="col-span-1 flex items-center">
-            <p className="text-sm text-black dark:text-white">{product.sold}</p>
-          </div>
-          <div className="col-span-1 flex items-center">
-            <p className="text-sm text-meta-3">${product.profit}</p>
-          </div>
-        </div>
-      ))}
     </div>
   );
 };
