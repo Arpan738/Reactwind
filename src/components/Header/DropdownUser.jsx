@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import ClickOutside from '../ClickOutside';
-import UserOne from '../../images/user/user-01.png';
+import UserOne from '../../images/user/user-02.png';
 
 const DropdownUser = () => {
 
@@ -17,7 +17,7 @@ const DropdownUser = () => {
       >
         <span className="hidden text-right lg:block">
           <span className="block text-sm font-medium text-black dark:text-white">
-            Arpan Patra
+            Jane Doe
           </span>
           <span className="block text-xs">Web Developer</span>
         </span>
